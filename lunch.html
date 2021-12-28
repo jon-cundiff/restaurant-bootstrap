@@ -15,6 +15,8 @@
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
         />
 
+        <link rel="stylesheet" href="styles/styles.css" />
+
         <title>Huynh Restaurant - Authentic Vietnamese Cuisine</title>
     </head>
 
@@ -22,7 +24,8 @@
         <div class="vh-100 bg-light bg-gradient">
             <nav
                 class="
-                    navbar navbar-expand-md navbar-light
+                    navbar navbar-expand-md
+                    5avbar-light
                     bg-light bg-gradient
                     shadow
                     mb-3
@@ -132,8 +135,2638 @@
                     py-3
                 "
             >
-                <h2>Lunch</h2>
-                <p></p>
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Lunch Menu</h2>
+                        <ul
+                            class="nav nav-pills nav-fill"
+                            id="menuTab"
+                            role="tablist"
+                        >
+                            <li class="nav-item" role="presentation">
+                                <button
+                                    class="nav-link active"
+                                    id="appetizer-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#appetizer"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="appetizer"
+                                    aria-selected="true"
+                                >
+                                    Ăn Chơi –Appetizers
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button
+                                    class="nav-link"
+                                    id="vermicelli-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#vermicelli"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="vermicelli"
+                                    aria-selected="false"
+                                >
+                                    Bún - Vermicelli Noodles
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button
+                                    class="nav-link"
+                                    id="beef-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#beef"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="beef"
+                                    aria-selected="false"
+                                >
+                                    Phở - Beef Noodle Soup
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button
+                                    class="nav-link"
+                                    id="rice-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#rice"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="rice"
+                                    aria-selected="false"
+                                >
+                                    Cơm Dĩa - Rice Plates
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button
+                                    class="nav-link"
+                                    id="fried-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#fried"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="fried"
+                                    aria-selected="false"
+                                >
+                                    Cơm Chiên - Fried Rice
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button
+                                    class="nav-link"
+                                    id="noodles-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#noodles"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="noodles"
+                                    aria-selected="false"
+                                >
+                                    Mì hoặc Hủ Tiếu Xào - Noodles
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button
+                                    class="nav-link"
+                                    id="tofu-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#tofu"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="tofu"
+                                    aria-selected="false"
+                                >
+                                    Ðồ Chay - Vegetable & Tofu Dishes
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button
+                                    class="nav-link"
+                                    id="noodles2-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#noodles2"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="noodles2"
+                                    aria-selected="false"
+                                >
+                                    Hủ Tiếu, Mì - Noodles
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button
+                                    class="nav-link"
+                                    id="paper-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#paper"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="paper"
+                                    aria-selected="false"
+                                >
+                                    Bánh Cuốn - Fresh Rice Paper
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button
+                                    class="nav-link"
+                                    id="stirfry-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#stirfry"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="stirfry"
+                                    aria-selected="false"
+                                >
+                                    Stir-fry Combinations
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button
+                                    class="nav-link"
+                                    id="sides-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#sides"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="sides"
+                                    aria-selected="false"
+                                >
+                                    Sides & Extras
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button
+                                    class="nav-link"
+                                    id="family-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#family"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="family"
+                                    aria-selected="false"
+                                >
+                                    Family Style
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button
+                                    class="nav-link"
+                                    id="beverages-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#beverages"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="beverages"
+                                    aria-selected="false"
+                                >
+                                    Giải Khát - Beverages
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button
+                                    class="nav-link"
+                                    id="desserts-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#desserts"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="desserts"
+                                    aria-selected="false"
+                                >
+                                    Tráng Miệng - Desserts
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button
+                                    class="nav-link"
+                                    id="smoothies-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#smoothies"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="smoothies"
+                                    aria-selected="false"
+                                >
+                                    Sinh Tố - Smoothies
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <div class="tab-content" id="myTabContent">
+                            <div
+                                class="tab-pane fade show active"
+                                id="appetizer"
+                                role="tabpanel"
+                                aria-labelledby="appetizer-tab"
+                            >
+                                <div class="container-fluid p-3 border">
+                                    <div
+                                        class="
+                                            row
+                                            justify-content-center
+                                            text-center
+                                            gx-2
+                                        "
+                                    >
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                CHẢ GIÒ VIÊT NAM (2 cuốn)
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Crispy Egg Rolls (2) (Shrimp &
+                                                Pork filling) Served with fish
+                                                sauce, herbs & lettuce wrap
+                                            </p>
+                                            <p>$3.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                GỎI CUỐN (2 cuốn)
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Spring Rolls (2): shrimp &
+                                                sliced pork rolled in soft rice
+                                                paper, served with peanut sauce
+                                            </p>
+                                            <p>$3.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                GỎI CUỐN THỊT NƯỚNG
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Spring Rolls (2): Grilled Pork
+                                                rolled in soft rice paper.
+                                                Served with fish sauce
+                                            </p>
+                                            <p>$3.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                GỎI CUỐN CHAY (2 cuốn)
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Vegetarian Spring Rolls (2) with
+                                                tofu, peanuts & vegetables,
+                                                served with peanut sauce
+                                            </p>
+                                            <p>$3.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                BÁNH ƯỚT THIT NƯỚNG
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Grilled pork wrapped in special
+                                                soft rice paper (2). Served with
+                                                meat sauce
+                                            </p>
+                                            <p>$3.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                BÁNH ƯỚT TÔM CHẤY
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Soft rice paper with crushed
+                                                dried shrimp, served with fried
+                                                onion (3 sheets)
+                                            </p>
+                                            <p>$3.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                GỎI GÀ, TÔM, ÐẬU HỦ
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Choice of chicken, shrimp, or
+                                                tofu tossed with fresh herbs &
+                                                cabbage, served with ginger
+                                                dipping sauce
+                                            </p>
+                                            <p>$9.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                GỎI VỊT
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Pulled duck mixed with fresh
+                                                herbs & cabbage, served with
+                                                ginger dipping sauce
+                                            </p>
+                                            <p>$9.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                GỎI CUỐN GÀ NƯỚNG
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Spring Roll (2) Grilled dark
+                                                chicken in soft rice paper.
+                                                Served with fish sauce
+                                            </p>
+                                            <p>$3.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                CHEN HOÀNH THÁNH
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Cup of home-made wontons (pork &
+                                                shrimp) in chicken broth
+                                            </p>
+                                            <p>$3.95</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="tab-pane fade"
+                                id="vermicelli"
+                                role="tabpanel"
+                                aria-labelledby="vermicelli-tab"
+                            >
+                                <h4 class="text-center">
+                                    Vermicelli Noodle Bowls
+                                </h4>
+                                <p class="text-center">
+                                    A bowl of cool thin rice noodles and fresh
+                                    vegetables are topped with your choice of
+                                    meat and chopped peanuts
+                                </p>
+                                <div class="container-fluid p-3 border">
+                                    <div
+                                        class="
+                                            row
+                                            justify-content-center
+                                            text-center
+                                            gx-2
+                                        "
+                                    >
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                BÚN BÒ XÀO
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Stir-fried lemongrass beef
+                                                (chicken or tofu available on
+                                                request
+                                            </p>
+                                            <p>$10.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                BÚN THỊT NƯỚNG
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Chargrilled pork
+                                            </p>
+                                            <p>$10.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                BÚN GÀ NƯỚNG
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Chargrilled Chicken (dark meat)
+                                            </p>
+                                            <p>$10.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                BÚN TÔM NƯỚNG
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Chargrilled shrimp
+                                            </p>
+                                            <p>$10.95</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h4 class="text-center my-4">
+                                    Vermicelli Noodle Soups
+                                </h4>
+                                <div class="container-fluid p-3 border">
+                                    <div
+                                        class="
+                                            row
+                                            justify-content-center
+                                            text-center
+                                            gx-2
+                                        "
+                                    >
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                BÚN MĂNG VỊT
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Vermicelli noodle soup with duck
+                                                and fermented bamboo shoots
+                                            </p>
+                                            <p>$13.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                BÚN BÒ HUẾ
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Spicy noodle soup with sliced
+                                                beef in a broth with chilies &
+                                                lemongrass Optional "Vietnamese
+                                                Style" includes blood cake
+                                                (huyết) and pork hock
+                                            </p>
+                                            <p>$13.95</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="tab-pane fade"
+                                id="beef"
+                                role="tabpanel"
+                                aria-labelledby="beef-tab"
+                            >
+                                <p class="text-center">
+                                    Traditional rice noodle soup with an
+                                    aromatic home-made beef broth
+                                </p>
+                                <div class="container-fluid p-3 border">
+                                    <div
+                                        class="
+                                            row
+                                            justify-content-center
+                                            text-center
+                                            gx-2
+                                        "
+                                    >
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">TÁI</p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Eye of Round Beef
+                                            </p>
+                                            <p>Regular $10.95 / Large $12.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                CHÍN
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Well-done Brisket
+                                            </p>
+                                            <p>Regular $10.95 / Large $12.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">GẦU</p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Brisket
+                                            </p>
+                                            <p>Regular $10.95 / Large $12.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">NẠM</p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Well-Done Flank
+                                            </p>
+                                            <p>Regular $10.95 / Large $12.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                VÈ DÒN
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Skirt Flank
+                                            </p>
+                                            <p>Regular $10.95 / Large $12.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">GÂN</p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Soft Tendon
+                                            </p>
+                                            <p>Regular $10.95 / Large $12.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                SÁCH
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Beef Tripe
+                                            </p>
+                                            <p>Regular $10.95 / Large $12.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                ÐẶC BIỆT
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Combination of above
+                                            </p>
+                                            <p>Regular $11.95 / Large $13.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                Phở BÒ VIÊN
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Beef Meatballs
+                                            </p>
+                                            <p>Regular $10.95 / Large $12.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                Phở GÀ
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Dark, Mixed, or White Chicken
+                                            </p>
+                                            <p>Regular $10.95 / Large $12.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                Phở TOM
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Pho with shrimp
+                                            </p>
+                                            <p>Regular $10.95 / Large $12.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                Phở CHAY
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Pho with vegetables & tofu
+                                            </p>
+                                            <p>Regular $10.95 / Large $12.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                Phở (khong thit)
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                No meat
+                                            </p>
+                                            <p>Regular $5.95 / Large $7.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                CHÉN BÒ VIÊN
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Cup of Vietnamese meatballs
+                                            </p>
+                                            <p>$2.50</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="tab-pane fade"
+                                id="rice"
+                                role="tabpanel"
+                                aria-labelledby="rice-tab"
+                            >
+                                <p class="text-center fst-italic">
+                                    Add a fried egg to any rice plate for only
+                                    $1
+                                </p>
+                                <div class="container-fluid p-3 border">
+                                    <div
+                                        class="
+                                            row
+                                            justify-content-center
+                                            text-center
+                                            gx-2
+                                        "
+                                    >
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                CƠM PHƯỢNG HOÀNG
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Phoenix Chicken. Half of a
+                                                crispy Cornish Hen with house
+                                                rice, served with a fried egg
+                                                and special dipping sauce
+                                            </p>
+                                            <p>$13.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                CƠM GÀ NƯỚNG
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Chargrilled dark meat chicken
+                                                and house rice
+                                            </p>
+                                            <p>$13.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                CƠM SƯỜN NƯỚNG
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Chargrilled bone-in pork chop
+                                                served with crushed rice
+                                            </p>
+                                            <p>$13.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                CƠM TẤM THỊT NƯỚNG
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Chargrilled boneless pork served
+                                                with crushed rice
+                                            </p>
+                                            <p>$13.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                CƠM TẤM SƯỜN BÌ CHẢ
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Chargrilled bone-in pork chop,
+                                                shredded pork (or fried egg), &
+                                                egg cake with crushed rice
+                                            </p>
+                                            <p>$13.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                CƠM TẤM THỊT NƯỚNG BÌ CHẢ
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Chargrilled boneless pork,
+                                                shredded pork, egg cake, &
+                                                crushed rice
+                                            </p>
+                                            <p>$13.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                CƠM BÒ XÀO
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Stirfried beef and lemongrass
+                                                served with white rice
+                                            </p>
+                                            <p>$13.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                CƠM BÒ LÚC LẰC
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Tender chunks of stir-fried beef
+                                                tenderloin, peppers & onion,
+                                                served with house rice
+                                            </p>
+                                            <p>$15.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                CƠM GÀ LÚC LẰC
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Stir-fried white meat chicken
+                                                (or shrimp), peppers & onion,
+                                                served with house rice
+                                            </p>
+                                            <p>$15.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                CƠM SƯỜN BÒ ÐẠI HÀN
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Chargrilled beef short ribs,
+                                                served with shrimp, fried egg
+                                                and crushed rice
+                                            </p>
+                                            <p>$13.95</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="tab-pane fade"
+                                id="fried"
+                                role="tabpanel"
+                                aria-labelledby="fried-tab"
+                            >
+                                <p class="text-center">
+                                    Fried rice includes carrots, onions, peas,
+                                    and egg
+                                </p>
+                                <div class="container-fluid p-3 border">
+                                    <div
+                                        class="
+                                            row
+                                            justify-content-center
+                                            text-center
+                                            gx-2
+                                        "
+                                    >
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                CƠM CHIÊN XÁ XÍU
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                BBQ pork fried rice
+                                            </p>
+                                            <p>$11.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                CƠM CHIÊN GÀ
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Chicken fried rice
+                                            </p>
+                                            <p>$11.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                CƠM CHIÊN BÒ
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Beef fried rice
+                                            </p>
+                                            <p>$11.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                CƠM CHIÊN TÔM
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Shrimp fried rice
+                                            </p>
+                                            <p>$11.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                CƠM CHIÊN THẬP CẨM
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Combination pork, chicken,
+                                                shrimp, ham & sausage
+                                            </p>
+                                            <p>$11.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                CƠM CHIÊN ÐỒ BIỂN
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Seafood: shrimp, squid, fish
+                                                ball, & crab stick
+                                            </p>
+                                            <p>$11.95</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="tab-pane fade"
+                                id="noodles"
+                                role="tabpanel"
+                                aria-labelledby="noodles-tab"
+                            >
+                                <p class="text-center">
+                                    Wok-fried crispy flat rice noodle-cake
+                                    topped with your choice of stir-fry
+                                </p>
+                                <p class="text-center fst-italic">
+                                    Soft or crispy egg noodles, udon, or soft
+                                    wide rice noodles available by request
+                                </p>
+                                <div class="container-fluid p-3 border">
+                                    <div
+                                        class="
+                                            row
+                                            justify-content-center
+                                            text-center
+                                            gx-2
+                                        "
+                                    >
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                HỦ TIẾU XÀO ÐẶC BIỆT
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Combination of vegetables,
+                                                chicken, pork, beef, & seafood
+                                            </p>
+                                            <p>$16.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                HỦ TIẾU XÀO GÀ
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Chicken and mixed vegetables
+                                            </p>
+                                            <p>$16.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                HỦ TIẾU XÀO BÒ
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Beef and mixed vegetables
+                                            </p>
+                                            <p>$16.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                HỦ TIẾU XÀO ÐỒ BIỂN
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Seafood: shrimp, squid, scallop,
+                                                fish ball, & crab stick
+                                            </p>
+                                            <p>$16.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                HỦ TIẾU XÀO TÔM
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Shrimp and mixed vegetables
+                                            </p>
+                                            <p>$16.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                HỦ TIẾU XÀO HEO
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Pork and mixed vegetables
+                                            </p>
+                                            <p>$16.95</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="tab-pane fade"
+                                id="tofu"
+                                role="tabpanel"
+                                aria-labelledby="tofu-tab"
+                            >
+                                <div class="container-fluid p-3 border">
+                                    <div
+                                        class="
+                                            row
+                                            justify-content-center
+                                            text-center
+                                            gx-2
+                                        "
+                                    >
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                HỦ TIẾU XÀO CHAY
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Wok-fried crispy flat rice
+                                                noodle with stir-fried tofu &
+                                                vegetables
+                                            </p>
+                                            <p>$14.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                BÚN XÀO CHAY
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Stir-fried tofu & vegetables top
+                                                a bowl of thin rice noodles,
+                                                garnish with peanuts
+                                            </p>
+                                            <p>$13.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                ÐẬU HỦ XÀO LĂN
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Tofu stir-fried with coconut
+                                                curry and topped with peanuts
+                                            </p>
+                                            <p>$11.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                CƠM CHIÊN CHAY
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Fried rice with tofu,
+                                                vegetables, & egg
+                                            </p>
+                                            <p>$10.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                BÁNH CUỐN THANH TRÌ
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Freshly made rice paper folded
+                                                over fried onions
+                                            </p>
+                                            <p>$11.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                MÌ XÀO DÒN hoặc MỀM CHAY
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Crispy or soft egg noodles with
+                                                stir-fried tofu & vegetable
+                                            </p>
+                                            <p>$14.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                UDON XÀO MỀM CHAY
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Soft thick udon noodles with
+                                                stir-fried tofu and vegetables
+                                            </p>
+                                            <p>$14.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                ÐẬU HỦ XÀO XẢ ỚT
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Tofu stir-fried with onion, hot
+                                                chilies and lemongrass
+                                            </p>
+                                            <p>$11.95</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="tab-pane fade"
+                                id="noodles2"
+                                role="tabpanel"
+                                aria-labelledby="noodles2-tab"
+                            >
+                                <p class="text-center">
+                                    Your choice of rice noodle, egg noodle, or
+                                    clear noodle
+                                </p>
+                                <div class="container-fluid p-3 border">
+                                    <div
+                                        class="
+                                            row
+                                            justify-content-center
+                                            text-center
+                                            gx-2
+                                        "
+                                    >
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                HỦ TIẾU THẬP CẨM
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Your choice of noodles in
+                                                home-made chicken broth with
+                                                vegetables, chicken, pork, and
+                                                seafood
+                                            </p>
+                                            <p>Regular $10.95 / Large $12.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                MÌ GÀ
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Choice of noodles in chicken
+                                                broth w/ dark or white chicken
+                                            </p>
+                                            <p>Regular $10.95 / Large $12.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                MÌ XÁ XÍU
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Choice of noodles in home-made
+                                                soup with roasted pork
+                                            </p>
+                                            <p>Regular $10.95 / Large $12.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                MÌ HOÀNH THÁNH
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Egg noodle soup with wontons &
+                                                roasted pork
+                                            </p>
+                                            <p>Regular $10.95 / Large $12.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                MÌ QUẢNG
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Special yellow rice noodles with
+                                                pork, shrimp, fish cake,
+                                                shredded cabbage and banana
+                                                blossom to be tossed with a
+                                                lightly spicy broth. Garnished
+                                                with peanuts, fried onions, and
+                                                Vietnamese crackers
+                                            </p>
+                                            <p>Regular $10.95 / Large $12.95</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="tab-pane fade"
+                                id="paper"
+                                role="tabpanel"
+                                aria-labelledby="paper-tab"
+                            >
+                                <p class="text-center">
+                                    Sheets of freshly made rice paper folded
+                                    over your choice of filling, laid on a bed
+                                    of shreaded lettuce, bean sprouts, &
+                                    cucumbers.
+                                </p>
+                                <p class="text-center fst-italic">
+                                    ** Add Vietnamese ham for $1.50 **
+                                </p>
+                                <div class="container-fluid p-3 border">
+                                    <div
+                                        class="
+                                            row
+                                            justify-content-center
+                                            text-center
+                                            gx-2
+                                        "
+                                    >
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                BÁNH CUỐN NHÂN THỊT
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                ground pork, served with
+                                                Vietnamese ham
+                                            </p>
+                                            <p>$11.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                BÁNH CUỐN NHÂN THỊT NƯỚNG
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                chargrilled pork
+                                            </p>
+                                            <p>$11.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                BÁNH CUỐN THANH TRÌ
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                fried onions
+                                            </p>
+                                            <p>$11.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                BÁNH CUỐN TÔM CHẤY
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                crushed dried shrimp
+                                            </p>
+                                            <p>$11.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                BÁNH CUỐN THẬP CẨM
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                combination, served with
+                                                Vietnamese ham
+                                            </p>
+                                            <p>$11.95</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="tab-pane fade"
+                                id="stirfry"
+                                role="tabpanel"
+                                aria-labelledby="stirfry-tab"
+                            >
+                                <p class="text-center">
+                                    Served with cup of pho beef broth, egg roll,
+                                    and house rice.
+                                </p>
+                                <p class="text-center fst-italic">
+                                    ** Add a fried egg for $1 **
+                                </p>
+                                <p class="text-center fw-bold">
+                                    * No soup with take-out *
+                                </p>
+                                <div class="container-fluid p-3 border">
+                                    <div
+                                        class="
+                                            row
+                                            justify-content-center
+                                            text-center
+                                            gx-2
+                                        "
+                                    >
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                TÔM XÀO BÔNG CẢI
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Shrimp stir-fried with broccoli
+                                            </p>
+                                            <p>$15.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                TÔM XÀO ÐẬU HỦ
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Shrimp stir-fried with tofu
+                                            </p>
+                                            <p>$15.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                TÔM XÀO THẬP CẨM
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Shrimp stir-fried with mixed
+                                                vegetables
+                                            </p>
+                                            <p>$15.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                BÒ XÀO BÔNG CẢI
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Beef stir-fried with broccoli
+                                            </p>
+                                            <p>$15.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                BÒ XÀO ÐẬU HỦ
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Beef stir-fried with tofu
+                                            </p>
+                                            <p>$15.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                BÒ XÀO THẬP CẨM
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Beef stir-fried with mixed
+                                                vegetables
+                                            </p>
+                                            <p>$15.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                GÀ XÀO BÔNG CẢI
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Chicken stir-fried with broccoli
+                                            </p>
+                                            <p>$15.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                GÀ XÀO ÐẬU HỦ
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Chicken stir-fried with tofu
+                                            </p>
+                                            <p>$15.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                GÀ XÀO THẬP CẨM
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Chicken stir-fried with mixed
+                                                vegetables
+                                            </p>
+                                            <p>$15.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                RAU XÀO ÐẬU HỦ
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Vegetables stir-fried with tofu
+                                            </p>
+                                            <p>$15.95</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="tab-pane fade"
+                                id="sides"
+                                role="tabpanel"
+                                aria-labelledby="sides-tab"
+                            >
+                                <div class="container-fluid p-3 border">
+                                    <div
+                                        class="
+                                            row
+                                            justify-content-center
+                                            text-center
+                                            gx-2
+                                        "
+                                    >
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                House Rice
+                                            </p>
+                                            <p>$2.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                White Rice
+                                            </p>
+                                            <p>$1.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                Fried Egg
+                                            </p>
+                                            <p>$1.00</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                Vegetables (add)
+                                            </p>
+                                            <p>$2.00</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                Vegetables (steamed)
+                                            </p>
+                                            <p>$4.00</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                Meat or Shrimp (add)
+                                            </p>
+                                            <p>$4.50</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                Bread
+                                            </p>
+                                            <p>$1.50</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                Dipping Sauce
+                                            </p>
+                                            <p>$0.50</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                Smiles
+                                            </p>
+                                            <p>FREE</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="tab-pane fade"
+                                id="family"
+                                role="tabpanel"
+                                aria-labelledby="family-tab"
+                            >
+                                <p class="text-center">Easy to share</p>
+                                <div class="container-fluid p-3">
+                                    <div
+                                        class="
+                                            row
+                                            justify-content-center
+                                            text-center
+                                            gx-2
+                                        "
+                                    >
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                BÒ LÚC LẰC / Gà hoặc TÔM LÚC LẰC
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Tender chunks of stir-fried beef
+                                                tenderloin (or chicken or
+                                                shrimp), peppers & onions
+                                            </p>
+                                            <p>Regular $15.95 / Large $26.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                SƯỜN BÒ ÐẠI HÀN
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Chargrilled beef short ribs
+                                            </p>
+                                            <p>Regular $13.95 / Large $22.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                ÐẬU HỦ XÀO THỊT XAY
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Ground pork stir-fried with
+                                                diced tofu, woodear mushrooms,
+                                                peppers & onions
+                                            </p>
+                                            <p>Regular $14.95 / Large $22.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                BOK CHOY XÀO TỎI
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Baby Bok Choy (or broccoli)
+                                                stir-fried with garlic
+                                            </p>
+                                            <p>Regular $9.95 / Large $15.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                TÔM hoặc GÀ XÀO LĂN
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Coconut curry with your choice
+                                                of shrimp or chicken, garnished
+                                                with peanuts
+                                            </p>
+                                            <p>Regular $14.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                TÔM hoặc GÀ XÀO XẢ ỚT
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Shrimp or chicken stir-fried
+                                                with chilies and lemongrass
+                                            </p>
+                                            <p>Regular $14.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                BÒ XÀO XÀ LÁCH
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Lemongrass beef (or chicken) on
+                                                a salad with fresh herbs, bean
+                                                sprouts and peanuts
+                                            </p>
+                                            <p>Regular $14.95</p>
+                                        </div>
+                                        <p class="text-center fst-italic">
+                                            Ask your server about other menu
+                                            items that are easy to share!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="tab-pane fade"
+                                id="beverages"
+                                role="tabpanel"
+                                aria-labelledby="beverages-tab"
+                            >
+                                <div class="container-fluid p-3 border">
+                                    <div
+                                        class="
+                                            row
+                                            justify-content-center
+                                            text-center
+                                            gx-2
+                                        "
+                                    >
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                TRÀ ÐÁ
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Iced tea
+                                            </p>
+                                            <p>$2.00</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                TRÀ NÓNG
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Hot tea: Jasmine or
+                                                Chrysanthemum
+                                            </p>
+                                            <p>$2.50</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                NƯỚC NGỌT
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Soft drinks: Coke, Diet Coke,
+                                                Dr. P., & Sprite
+                                            </p>
+                                            <p>$1.75</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                CÀ PHÊ ÐÁ
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Vietnamese iced coffee (black)
+                                            </p>
+                                            <p>$3.50</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                CÀ PHÊ SỮA ÐÁ
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Vietnamese iced coffee with
+                                                sweet condensed milk
+                                            </p>
+                                            <p>$4.50</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                NƯỚC DƯÀ TƯƠI
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Coconut juice
+                                            </p>
+                                            <p>$3.00</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                SỮA ÐẬU NÀNH
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Soybean milk, Vietnamese style
+                                            </p>
+                                            <p>$2.50</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                ÐÁ CHANH
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Fresh squeezed lemonade
+                                            </p>
+                                            <p>$3.00</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                CHANH MUỐI
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Salty lemonade
+                                            </p>
+                                            <p>$3.00</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                SODA CHANH
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Fresh lemonade and soda
+                                            </p>
+                                            <p>$3.00</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                SODA CHANH MUỐI
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Salty lemonade and soda
+                                            </p>
+                                            <p>$3.00</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                CAM VẮT
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Fresh squeezed orange juice
+                                            </p>
+                                            <p>$4.00</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                NƯỚC SUỐI
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Bottled water
+                                            </p>
+                                            <p>$2.00</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                NƯỚC TopoChico
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Sparkling mineral water
+                                            </p>
+                                            <p>$2.25</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="tab-pane fade"
+                                id="desserts"
+                                role="tabpanel"
+                                aria-labelledby="desserts-tab"
+                            >
+                                <div class="container-fluid p-3 border">
+                                    <div
+                                        class="
+                                            row
+                                            justify-content-center
+                                            text-center
+                                            gx-2
+                                        "
+                                    >
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                CÀ PHÊ BƠ
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Avocado Coffee
+                                            </p>
+                                            <p>$5.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                CÀ PHÊ DƯÀ
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Coconut Coffee
+                                            </p>
+                                            <p>$5.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                Flan
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Vietnamese style flan topped
+                                                with crushed ice and coffee
+                                                drizzle
+                                            </p>
+                                            <p>$5.95</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="tab-pane fade"
+                                id="smoothies"
+                                role="tabpanel"
+                                aria-labelledby="smoothies-tab"
+                            >
+                                <div class="container-fluid p-3 border">
+                                    <div
+                                        class="
+                                            row
+                                            justify-content-center
+                                            text-center
+                                            gx-2
+                                        "
+                                    >
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                SINH TỐ MÍT
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Jack fruit
+                                            </p>
+                                            <p>$4.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                SINH TỐ BƠ
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Avocado (seasonal)
+                                            </p>
+                                            <p>$4.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                SINH TỐ SẦU RIÊNG
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Durian fruit
+                                            </p>
+                                            <p>$4.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                SINH TỐ MẢNG CẦU
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Sour-Sop fruit
+                                            </p>
+                                            <p>$4.95</p>
+                                        </div>
+                                        <div
+                                            class="
+                                                col-md-5 col-lg-3 col-xl-2
+                                                m-1
+                                                p-2
+                                                border border-warning
+                                                bg-warning bg-opacity-5
+                                            "
+                                        >
+                                            <p class="fw-bold fs-5 mb-1">
+                                                SINH TỐ XOÀI
+                                            </p>
+                                            <p class="fst-italic fs-6 mb-1">
+                                                Mango (seasonal)
+                                            </p>
+                                            <p>$4.95</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="fst-italic text-center mt-4">
+                    Huynh is not responsible for any foodborne illness due to
+                    consumption of raw meat or eggs
+                </p>
             </div>
 
             <footer
@@ -147,7 +2780,7 @@
                 "
             >
                 <div class="row justify-content-center text-center">
-                    <div class="col-md-3 mb-3">
+                    <div class="col-md-5 mb-3">
                         <p>
                             <i class="bi-map-fill fs-1 mb-1"></i>
                         </p>
@@ -155,7 +2788,7 @@
                         <p class="mb-1">912 Saint Emanuel</p>
                         <p>Houston, TX 77003</p>
                     </div>
-                    <div class="col-md-3 mb-3">
+                    <div class="col-md-5 mb-3">
                         <p>
                             <i class="bi-calendar-day-fill fs-1 mb-1"></i>
                         </p>
@@ -166,7 +2799,7 @@
                         <p class="mb-1">5:00pm-9:00pm Central</p>
                         <p class="fw-bold">Sunday - Closed</p>
                     </div>
-                    <div class="col-md-3 mb-3">
+                    <div class="col-md-5 mb-3">
                         <p>
                             <i class="bi-facebook fs-1"></i>
                         </p>

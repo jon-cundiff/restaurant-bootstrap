@@ -2,6 +2,18 @@
     position: relative;
 }
 
+.review-container {
+    padding: 1rem 0.5rem;
+}
+
+.carousel-item img {
+    height: 330px;
+}
+
+.bg-opacity-5 {
+    --bs-bg-opacity: 0.05;
+}
+
 @media screen and (min-width: 768px) {
     /* .footer {
         position: absolute;
@@ -9,5 +21,13 @@
 
     .main-img {
         padding-top: 6rem;
+    }
+
+    .review-container {
+        padding: 1rem 3rem;
+    }
+
+    .carousel-item img {
+        height: 192px;
     }
 }
