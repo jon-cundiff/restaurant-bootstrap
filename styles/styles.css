@@ -1,3 +1,13 @@
+body {
+    --bs-body-font-size: 0.7rem;
+}
+
+.card-img-overlay h2 {
+    font-size: 1rem;
+    margin-top: -0.9rem;
+    margin-bottom: 0;
+}
+
 .footer {
     position: relative;
 }
@@ -7,7 +17,11 @@
 }
 
 .carousel-item img {
-    height: 330px;
+    height: 300px;
+}
+
+.carousel-caption h4 {
+    font-size: 0.85rem;
 }
 
 .bg-opacity-5 {
@@ -15,9 +29,19 @@
 }
 
 @media screen and (min-width: 768px) {
-    /* .footer {
-        position: absolute;
-    } */
+    body {
+        --bs-body-font-size: 1rem;
+    }
+
+    .card-img-overlay h2 {
+        font-size: 1.325rem;
+        margin-top: 0;
+        margin-bottom: 8px;
+    }
+
+    .carousel-caption h4 {
+        font-size: 1rem;
+    }
 
     .main-img {
         padding-top: 6rem;
@@ -29,5 +53,16 @@
 
     .carousel-item img {
         height: 192px;
+    }
+}
+
+/* Galaxy fold has very thin screen and overflow */
+@media screen and (max-width: 280px) {
+    .card-img-overlay h2 {
+        font-size: 0.65rem;
+    }
+
+    .card-img-overlay p {
+        font-size: 0.55rem;
     }
 }
